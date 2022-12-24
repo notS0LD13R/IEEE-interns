@@ -20,18 +20,99 @@ family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesh
                 <img src="Media/logo.png" cl="logo">
                 <b>IKS INTERN</b>
             </div>
-            <ul>
-                
+            <ul class="">
                 <li>HOME</li>
                 <li>PRODUCTS</li>
                 <li>RESOURCES</li>
                 <li>PRICING</li>
             </ul>
+            <div class="burger">
+                <svg width="50" height="50">
+                    <line x1="0" y1="12.5" x2="50" y2="12.5"/>
+                    <line x1="0" y1="25" x2="50" y2="25"/>
+                    <line x1="0" y1="37.5" x2="50" y2="37.5"/>
+                </svg>
+            </div>
         </nav>
     </header>
     <main>
         <section class="left"></section>
-        <section class="right"></section>
+        <section class="right">
+            <div class="heading">
+                <h1 class="unbounded">Let's level up your skills,together</h1>
+                <h6>You can reach us anytime via fake@gmaill.com</h6>
+            </div>
+            <form action="" method="post">
+                <div class="labelinputpair">
+                    <label for="Name">Name</label>                
+                <input type="text" name="Name" id="Name">
+                </div>
+
+                <div class="labelinputpair">
+                    <label for="Email">Email</label>
+                <input type="text" name="Email" id="Email">
+                </div>
+
+                <div class="labelinputpair">
+                    <label for="Phone No">Phone No</label>
+                <input type="text" name="Phone No" id="PhoneNo">
+                </div>
+
+                <div class="labelinputpair">
+                    <label for="Description">Description</label>
+                <input type="text" name="Description" id="Description">
+                </div>
+                
+                <div class="checkboxes">
+                    <div class="cbhead">Services</div>
+
+                    <div class="labelboxpair">
+                        <input type="checkbox" name="Website Design" id="" class="cb">
+                        <label for="Website Design">Website Design</label>
+                        
+                    </div> 
+
+                    <div class="labelboxpair">
+                        <input type="checkbox" name="UX design" id="" class="cb">
+                        <label for="UX design">UX design</label>
+                        
+                    </div>
+
+                    <div class="labelboxpair">    
+                        <input type="checkbox" name="User Research" id="" class="cb">
+                        <label for="User Research">User Research</label>
+                        
+                    </div>
+
+                    <div class="labelboxpair">    
+                        <input type="checkbox" name="Content Creation" id="" class="cb">
+                        <label for="Content Creation">Content Creation</label>
+                        
+                    </div>
+
+                    <div class="labelboxpair">    
+                        <input type="checkbox" name="Strategist" id="" class="cb">
+                        <label for="Strategist">Strategist</label>
+                        
+                    </div>
+
+                    <div class="labelboxpair">    
+                        <input type="checkbox" name="Other" id="" class="cb">
+                        <label for="Other">Other</label>
+                        
+                    </div>
+
+                </div>
+
+                <input type="submit" value="Send Deets" onsubmit="return false" id="submitbutton">
+                
+
+
+                
+                
+                
+            </form>
+        </section>
     </main>
 </body>
 <script src="script.js"></script>
