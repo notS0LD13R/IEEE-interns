@@ -39,12 +39,16 @@ $medium:800px;
     
 
     ul{
-        text-decoration: none;
         list-style-type: none;
         font-weight: 400;
         display: flex;
         align-items: center;
         gap:3vw;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
         
 
         @media screen and (max-width: $medium){
@@ -170,6 +174,7 @@ main{
                     padding: 5px;
                     font-family: 'Roboto Mono', monospace;
                     font-weight: 400;
+                    resize: vertical;
                 }
 
                 #Description{
@@ -190,6 +195,9 @@ main{
                     align-items: center;
                     gap: 0.5rem;
                 }
+                input{
+                    cursor: pointer;
+                }
             }
             >#submitbutton{
                 height:50px ;
@@ -198,6 +206,7 @@ main{
                 color: var(--white);
                 font-weight: 600;
                 font-size: 15px;
+                cursor: pointer;
             }
         }
 
@@ -237,7 +246,7 @@ footer{
     }
 
     .grid-container{
-        font-size: 20px;
+        font-size: 17px;
         display: grid;
         grid-template-rows: repeat(6,1fr);
         gap: 1rem;

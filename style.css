@@ -24,12 +24,15 @@
   gap: 3vw;
 }
 .navbar ul {
-  text-decoration: none;
   list-style-type: none;
   font-weight: 400;
   display: flex;
   align-items: center;
   gap: 3vw;
+}
+.navbar ul a {
+  color: black;
+  text-decoration: none;
 }
 @media screen and (max-width: 800px) {
   .navbar ul {
@@ -135,6 +138,7 @@ main .right form .labelinputpair textarea {
   padding: 5px;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
+  resize: vertical;
 }
 main .right form .labelinputpair #Description {
   height: 6rem;
@@ -153,6 +157,9 @@ main .right form > .checkboxes > .labelboxpair {
   align-items: center;
   gap: 0.5rem;
 }
+main .right form > .checkboxes input {
+  cursor: pointer;
+}
 main .right form > #submitbutton {
   height: 50px;
   border-radius: 10px;
@@ -160,6 +167,7 @@ main .right form > #submitbutton {
   color: var(--white);
   font-weight: 600;
   font-size: 15px;
+  cursor: pointer;
 }
 
 footer {
@@ -191,7 +199,7 @@ footer .flex-container > .logo {
   margin: 0;
 }
 footer .grid-container {
-  font-size: 20px;
+  font-size: 17px;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   gap: 1rem;
