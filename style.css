@@ -15,10 +15,6 @@
   border: 0;
 }
 
-header {
-  overflow: hidden;
-}
-
 .navbar {
   position: relative;
   z-index: 2;
@@ -46,12 +42,13 @@ header {
     top: 5.42rem;
     right: 0;
     font-size: 25px;
-    transform: translateX(50vw);
+    transform: translateX(50vw) scaleX(0);
+    transform-origin: right;
   }
 }
 .navbar ul.active {
-  transition: transform 0.5s ease-in-out;
-  transform: translateX(0);
+  transition: 0.5s ease-in-out;
+  transform: translateX(0) scaleX(1);
 }
 .navbar .burger {
   margin-left: auto;
