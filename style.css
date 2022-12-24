@@ -5,6 +5,10 @@
   font-family: "Roboto Mono", monospace;
 }
 
+html {
+  overflow: hidden;
+}
+
 .unbounded {
   font-family: "Unbounded";
 }
@@ -13,6 +17,10 @@
   padding: 0;
   margin: 0;
   border: 0;
+}
+
+header {
+  overflow: hidden;
 }
 
 .navbar {

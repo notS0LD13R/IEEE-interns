@@ -8,6 +8,10 @@ $medium:800px;
     
 }
 
+html{
+    overflow: hidden;
+}
+
 .unbounded{
     font-family:'Unbounded';
 }
@@ -18,6 +22,10 @@ $medium:800px;
     padding: 0;
     margin: 0;
     border: 0;
+}
+
+header{
+    overflow: hidden;
 }
 
 .navbar{
@@ -41,6 +49,7 @@ $medium:800px;
         display: flex;
         align-items: center;
         gap:3vw;
+        
 
         @media screen and (max-width: $medium){
             background-color: var(--white);
