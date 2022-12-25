@@ -124,6 +124,18 @@ main .right form {
   grid-template-rows: 1fr 1fr 1fr 3fr 3fr 1fr;
   gap: 1.2rem 0;
 }
+main .right form.success::after {
+  content: "Submitted Successfully!";
+  color: greenyellow;
+  display: flex;
+  justify-content: center;
+}
+main .right form.fail::after {
+  content: "Submit Failed!";
+  color: red;
+  display: flex;
+  justify-content: center;
+}
 main .right form .labelinputpair {
   display: flex;
   flex-direction: column;
@@ -178,7 +190,7 @@ main .right form > .checkboxes > .labelboxpair {
   align-items: center;
   gap: 0.5rem;
 }
-main .right form > .checkboxes input {
+main .right form > .checkboxes input, main .right form > .checkboxes label {
   cursor: pointer;
 }
 main .right form > #submitbutton {
@@ -189,6 +201,10 @@ main .right form > #submitbutton {
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
+}
+main .right form > #submitbutton:hover {
+  background-color: var(--grey);
+  filter: brightness(90%);
 }
 
 footer {

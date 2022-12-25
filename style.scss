@@ -49,7 +49,7 @@ $medium:800px;
         li{
             padding: .3rem;
         }
-
+        
         li:hover{
             
             background-color: rgba(#000000,.10);
@@ -164,6 +164,20 @@ main{
             display: grid;
             grid-template-rows: 1fr 1fr 1fr 3fr 3fr 1fr;
             gap:1.2rem 0;
+
+            &.success::after{
+                content: "Submitted Successfully!";
+                color: greenyellow;
+                display: flex;
+                justify-content: center;
+            }
+
+            &.fail::after{
+                content: "Submit Failed!";
+                color: red;
+                display: flex;
+                justify-content: center;
+            }
             
             .labelinputpair{
                 display: flex;
@@ -225,9 +239,11 @@ main{
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
+                    
                 }
-                input{
+                input,label{
                     cursor: pointer;
+                    
                 }
             }
             >#submitbutton{
@@ -238,6 +254,12 @@ main{
                 font-weight: 600;
                 font-size: 15px;
                 cursor: pointer;
+
+                &:hover{
+                    background-color: var(--grey);
+                    filter: brightness(90%);
+                }
+
             }
         }
 
@@ -246,6 +268,7 @@ main{
 
     }
 }
+
 
 footer{
     box-sizing: border-box;
