@@ -122,6 +122,12 @@ main .right form .labelinputpair {
   gap: 0.5rem;
   font-weight: 600;
 }
+main .right form .labelinputpair .error {
+  box-shadow: 0 0 10px red;
+}
+main .right form .labelinputpair i {
+  color: red;
+}
 main .right form .labelinputpair input {
   width: 100%;
   height: 2.2rem;
