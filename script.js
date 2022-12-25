@@ -14,7 +14,7 @@ form.addEventListener('submit',(e)=>{
     e.preventDefault()
     let form_data=new FormData(form)
     const check_value=checkdata(form_data)
-    
+
 
     if (check_value[0]){
         show_form_error(check_value[1],reset=true)
@@ -22,6 +22,15 @@ form.addEventListener('submit',(e)=>{
         console.log(Array.from(form_data.values()))
         post_form(form_data).then((stat)=>{
             console.log("Status of post:",stat)
+            if(stat===200){
+                form.classList.add('success')
+                form.classList.remove('fail')
+            }
+            else{
+                form.classList.add('fail')
+                form.classList.remove('success')
+            }
+
         })
     }
     else
@@ -33,6 +42,10 @@ form.addEventListener('submit',(e)=>{
 
 //visualise invalid outputs on the site
 function show_form_error(form_error,reset=false){
+    
+    form.classList.add('fail')
+    form.classList.remove('success')
+    
     doms={
         'name':document.getElementById('Name'),
         'email':document.getElementById('Email'),
