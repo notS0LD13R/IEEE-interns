@@ -22,9 +22,38 @@
 // }
 
 
+
+
+//Burger Menu
 const burger=document.getElementById('burger')
-console.log(burger)
 burger.addEventListener('click',(e)=>{
     const burgermenu=document.getElementById('nav')
     burgermenu.classList.toggle('active')
 })
+
+
+
+const form=document.getElementById('mainform')
+form.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    const form_data=new FormData(form)
+    form_data.append('formId','task')
+    console.log(Array.from(new URLSearchParams(form_data)))
+
+    
+    post_form(new URLSearchParams(form_data)).then((stat)=>{
+        console.log(stat)
+    })
+})
+
+
+async function post_form(form_data){
+    const url="https://mint-forms.ieee-mint.org/api/form/addresponse"
+    const response=await fetch(url,{
+        method:"POST",
+        body:form_data
+    })  
+    return response.status
+}
+
+
