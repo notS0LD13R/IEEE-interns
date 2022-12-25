@@ -65,11 +65,12 @@ $medium:800px;
             font-size: 25px;
             transform: translateX(50vw) scaleX(0);
             transform-origin: right;
+            transition: 0.5s ease-in-out;
 
         }
 
         &.active{
-            transition: 0.5s ease-in-out;
+            
             transform: translateX(0) scaleX(1);
         }
 
@@ -80,7 +81,8 @@ $medium:800px;
         position: relative;
         z-index: 2;
         display: none;
-
+        cursor: pointer;
+        
         line{
             stroke:black;
             stroke-width: 5px;

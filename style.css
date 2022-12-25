@@ -47,10 +47,10 @@
     font-size: 25px;
     transform: translateX(50vw) scaleX(0);
     transform-origin: right;
+    transition: 0.5s ease-in-out;
   }
 }
 .navbar ul.active {
-  transition: 0.5s ease-in-out;
   transform: translateX(0) scaleX(1);
 }
 .navbar .burger {
@@ -58,6 +58,7 @@
   position: relative;
   z-index: 2;
   display: none;
+  cursor: pointer;
 }
 .navbar .burger line {
   stroke: black;
