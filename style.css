@@ -30,6 +30,14 @@
   align-items: center;
   gap: 3vw;
 }
+.navbar ul li {
+  padding: 0.3rem;
+}
+.navbar ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 1rem;
+}
 .navbar ul a {
   color: black;
   text-decoration: none;
@@ -123,7 +131,7 @@ main .right form .labelinputpair {
   font-weight: 600;
 }
 main .right form .labelinputpair .error {
-  box-shadow: 0 0 10px red;
+  box-shadow: 0 0 5px red;
 }
 main .right form .labelinputpair i {
   color: red;
@@ -138,6 +146,9 @@ main .right form .labelinputpair input {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
 }
+main .right form .labelinputpair input:hover {
+  box-shadow: 0 0 5px grey;
+}
 main .right form .labelinputpair textarea {
   border: 1px solid var(--grey);
   border-radius: 5px;
@@ -146,6 +157,9 @@ main .right form .labelinputpair textarea {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   resize: vertical;
+}
+main .right form .labelinputpair textarea:hover {
+  box-shadow: 0 0 5px grey;
 }
 main .right form .labelinputpair #Description {
   height: 6rem;
